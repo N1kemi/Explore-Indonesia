@@ -1,0 +1,26 @@
+.gallery-grid {
+  width: 100%;
+  max-width: 1170px;
+  height: clamp(480px, 60vh, 770px);
+  display: grid;
+  grid-gap: var(--gap-24);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100%;
+}
+
+.gallery-column {
+  grid-gap: var(--gap-24);
+}
+
+.gallery-column-1 {
+  display: grid;
+  grid-template-rows: 3.2fr 1.8fr;
+}
+.gallery-column-2 {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+.gallery-column-3 {
+  display: grid;
+  grid-template-rows: 1.5fr 1.5fr;
+}

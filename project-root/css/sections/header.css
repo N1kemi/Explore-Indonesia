@@ -1,0 +1,32 @@
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/img/background-color-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.banner-section {
+  width: 100%;
+  height: inherit;
+  padding-top: clamp(4rem, 7vw, 13.6rem);
+  padding-left: clamp(1rem, 3.7vw, 71px);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: clamp(10rem, 10vw, 19.7rem);
+  overflow: hidden;
+}

@@ -1,0 +1,33 @@
+.scroll-to-top {
+  position: absolute;
+  bottom: 87px;
+  right: 70px;
+  width: 104px;
+  height: 104px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-base);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-base);
+}
+
+.scroll-to-top img {
+  width: 80%;
+  height: 80%;
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.1);
+  background-color: var(--color-primary-hover);
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}

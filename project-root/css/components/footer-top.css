@@ -1,0 +1,31 @@
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 11.2rem;
+}
+
+.footer__logo img {
+  width: 175px;
+  height: 65px;
+}
+
+.footer__nav {
+  display: block;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 4.2rem;
+  list-style: none;
+}
+
+.footer__menu a {
+  font-size: var(--fs-paragraph);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.footer__menu a:hover {
+  color: var(--color-primary);
+}

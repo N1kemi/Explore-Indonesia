@@ -1,0 +1,27 @@
+.explore_our_secrets {
+  background-image: url("../../assets/img/ifan-bima-B04Xpnu5JQ4-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: clamp(1200px, 200vh, 2200px);
+  overflow: visible;
+}
+
+.explore_our_secrets_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eos_slider-title {
+  text-align: center;
+  font-size: var(--fs-h3);
+  padding-top: var(--padding-120);
+  padding-bottom: 4.5rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}

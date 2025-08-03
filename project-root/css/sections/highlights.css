@@ -1,0 +1,112 @@
+.highlights-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.highlights-section__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.highlights-section__item {
+  width: 100%;
+  height: 812.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.highlights-section__item--top {
+  background-image: url("../../assets/img/andri-hermawan-O_9D_GD9Zs8-unsplash.jpg");
+}
+
+.highlights-section__item--top::before,
+.highlights-section__item--bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.highlights-section__item--top::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 10, 30, 0.9),
+    rgba(0, 10, 30, 1)
+  );
+}
+
+.highlights-section__item--bottom {
+  background-image: url("../../assets/img/destination_highlights_block-2.jpg");
+}
+
+.highlights-section__item--bottom::before {
+  background: linear-gradient(to top, rgba(0, 10, 30, 0.9), rgba(0, 10, 30, 1));
+}
+
+.highlight-section {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13rem;
+  z-index: 2;
+}
+
+.highlight-section--reverse {
+  flex-direction: row-reverse;
+}
+
+.highlight-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--gap-30);
+}
+
+.highlight-image {
+  width: 100%;
+  max-width: 630px;
+  height: 460px;
+  border-radius: 16px;
+}
+
+.highlight-title {
+  font-size: var(--fs-h3);
+}
+
+.highlight-description {
+  font-size: var(--fs-paragraph);
+  line-height: var(--lh-paragraph);
+  color: var(--color-text-gray);
+}
+
+.highlight-button {
+  background-color: var(--color-primary);
+  color: var(color-text);
+  font-size: var(--fs-paragraph);
+  width: 180px;
+  padding: var(--padding-18) var(--padding-14);
+  border: 0;
+  border-radius: var(--radius-30);
+  transition: var(--transition-base);
+  cursor: pointer;
+}
+
+.highlight-button:hover {
+  transform: scale(1.1);
+}

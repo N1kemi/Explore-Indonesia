@@ -1,0 +1,57 @@
+.journey-steps {
+  display: grid;
+  height: clamp(850px, 100vh, 1075px);
+}
+
+.journey-step {
+  display: flex;
+  gap: var(--gap-30);
+  align-items: flex-start;
+  position: relative;
+  height: 100%;
+}
+
+.step-number {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  background-color: var(--color-primary-hover);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-h5);
+  color: var(--color-text);
+  font-weight: bold;
+  position: relative;
+}
+
+.step-number_after::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 74rem;
+  background-color: #6f7787;
+}
+
+.step-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-28);
+  padding-top: var(--padding-10);
+}
+
+.step-title {
+  font-size: var(--fs-h5);
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+
+.step-description {
+  font-size: var(--fs-mobile-paragraph);
+  color: var(--color-text-gray);
+  line-height: var(--lh-paragraph);
+}

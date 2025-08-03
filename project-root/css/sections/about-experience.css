@@ -1,0 +1,61 @@
+.about-experience-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/img/hugo-matilla-EFuCATqfblI-unsplash.jpg") no-repeat
+      center / cover;
+  width: 100%;
+  height: clamp(800px, 110vh, 1475px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-experience-section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12.8rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-experience-section__title {
+  font-size: var(--fs-h4);
+  color: var(--color-text);
+  max-width: 1056px;
+}
+
+.about-experience-section__video {
+  position: relative;
+  width: 100%;
+  max-width: 1060px;
+  height: clamp(300px, 48vh, 600px);
+}
+
+.about-experience-section__video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-text);
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-base);
+}
+
+.btn-play img {
+  width: 100%;
+  height: 100%;
+}

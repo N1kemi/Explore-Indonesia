@@ -1,0 +1,92 @@
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+}
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin: 0.4rem 0;
+  transition: 0.4s ease;
+}
+
+.hamburger.active .bar {
+  opacity: 0;
+}
+
+.hamburger.active::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active::after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.hamburger-inside {
+  display: block;
+  align-self: flex-start;
+  margin: 3.5rem 0 var(--margin-30) var(--margin-30);
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: none;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  z-index: 999;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.burger-menu.active {
+  display: flex;
+  right: 0;
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger-link {
+  width: 100%;
+  font-size: var(--fs-h5);
+  padding: var(--padding-20) var(--padding-30);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.burger-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.no-scroll {
+  overflow: hidden !important;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar_button.hidden,
+.hamburger.active {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease;
+}

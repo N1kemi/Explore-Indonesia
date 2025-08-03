@@ -1,0 +1,21 @@
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.8rem;
+  flex-wrap: wrap;
+}
+
+.footer__social {
+  display: flex;
+  gap: var(--gap-24);
+}
+
+.footer__social img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__copyright {
+  font-size: var(--fs-paragraph);
+}

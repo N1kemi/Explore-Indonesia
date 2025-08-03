@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Indonesia</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="project-root/assets/img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="project-root/css/base/reset.css" />
+    <link rel="stylesheet" href="project-root/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <nav class="nav-container">
+          <img
+            class="nav-logo"
+            src="project-root/assets/img/logo-menu.png"
+            alt="logo"
+          />
+          <div class="nav-menu">
+            <ul class="nav-menu_ul">
+              <li><a href="#section1">DESTINATIONS</a></li>
+              <li><a href="#section2">EXPERIENCES</a></li>
+              <li><a href="#section3">ABOUT</a></li>
+              <li><a href="#section4">GALLERY</a></li>
+            </ul>
+            <div class="nav-bar">
+              <div class="nav-bar_container">
+                <div class="nav-bar_field">
+                  <input type="text" placeholder="Search..." />
+                </div>
+
+                <button class="nav-bar_button">
+                  <img
+                    class="nav-bar_button_img"
+                    src="project-root/assets/img/search.png"
+                    alt="search"
+                  />
+                </button>
+              </div>
+
+              <div class="hamburger">
+                <span class="bar"></span>
+              </div>
+
+              <div class="burger-menu">
+                <div class="hamburger hamburger-inside">
+                  <span class="bar"></span>
+                </div>
+                <a class="burger-link" href="#">About</a>
+                <a class="burger-link" href="#">How it work</a>
+                <a class="burger-link" href="#">Pricing</a>
+                <a class="burger-link" href="#">Solution</a>
+                <a class="burger-link" href="#">Features</a>
+                <button class="login-link" id="openModalBtn">Login</button>
+                <button class="register-link">Register</button>
+              </div>
+
+              <div class="form-container" id="form-container">
+                <div class="login-container form hidden" id="login-form">
+                  <div class="login-container-content form-content">
+                    <form name="main" class="main-form">
+                      <h1 class="form-h1">Login</h1>
+
+                      <div class="input-container">
+                        <div class="input-label">
+                          <label for="username"
+                            ><img
+                              class="img-icons"
+                              src="project-root/assets/img/person-icons.png"
+                              alt="#"
+                          /></label>
+                          <label for="password-input"
+                            ><img
+                              class="img-icons"
+                              src="project-root/assets/img/password-icons.png"
+                              alt=""
+                          /></label>
+                        </div>
+                        <div class="input-control-container">
+                          <div class="input-control">
+                            <input
+                              id="username"
+                              class="username"
+                              type="text"
+                              name="username"
+                              placeholder="Username"
+                            />
+                            <div class="error"></div>
+                          </div>
+                          <div class="input-control">
+                            <input
+                              class="password"
+                              type="password"
+                              name="password"
+                              placeholder="Password"
+                            />
+                            <div class="error"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="signup">Let's Go</button>
+                      <p class="login-p">
+                        New here?
+                        <a href="#" id="goToRegister">Create an Account</a>
+                      </p>
+                    </form>
+
+                    <div class="background">
+                      <button class="background-close">
+                        <img
+                          src="project-root/assets/img/close-icons.png"
+                          alt="#"
+                        />
+                      </button>
+                      <img
+                        src="project-root/assets/img/cok-wisnu-ohzMzm9zWuA-unsplash.jpg"
+                        alt="#"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="register-container form hidden" id="register-form">
+                  <div class="register-container-content form-content">
+                    <form name="main" class="main-form">
+                      <h1 class="form-h1">Register</h1>
+
+                      <div class="input-container" id="inp-size">
+                        <div class="input-label">
+                          <label for="username"
+                            ><img
+                              class="img-icons"
+                              src="project-root/assets/img/person-icons.png"
+                              alt="#"
+                          /></label>
+                          <label for="email"
+                            ><img
+                              class="img-icons"
+                              src="project-root/assets/img/email-icons.png"
+                              alt="#"
+                          /></label>
+                          <label for="password"
+                            ><img
+                              class="img-icons"
+                              src="project-root/assets/img/password-icons.png"
+                              alt=""
+                          /></label>
+                        </div>
+                        <div class="input-control-container">
+                          <div class="input-control">
+                            <input
+                              id="username"
+                              class="username"
+                              type="text"
+                              name="username"
+                              placeholder="Username"
+                            />
+                            <div class="error"></div>
+                          </div>
+                          <div class="input-control">
+                            <input
+                              id="email"
+                              class="email"
+                              type="email"
+                              name="email"
+                              placeholder="Email"
+                            />
+                            <div class="error"></div>
+                          </div>
+                          <div class="input-control">
+                            <input
+                              id="password"
+                              class="password"
+                              type="password"
+                              name="password"
+                              placeholder="Password"
+                            />
+                            <div class="error"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="signup">Welcome</button>
+                      <p class="login-p">
+                        Already have an Account?
+                        <a href="#" id="goToLogin">Login</a>
+                      </p>
+                    </form>
+
+                    <div class="background">
+                      <button class="background-close">
+                        <img
+                          src="project-root/assets/img/close-icons.png"
+                          alt="#"
+                        />
+                      </button>
+                      <img
+                        src="project-root/assets/img/background-color-header.jpg"
+                        alt="#"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="banner-section">
+          <div class="slider-container">
+            <div class="slider-container_progress-bar">
+              <div class="slider-container_progress-indicator">
+                <div class="progress"></div>
+              </div>
+              <span class="indicator-text">01</span>
+            </div>
+
+            <div class="slider">
+              <div class="slide slide1 active">
+                <h1 class="slide1_h1">EXPLORE INDONESIA</h1>
+                <button class="slide_buttom">Start travelling</button>
+              </div>
+              <div class="slide slide2">
+                <h2 class="slide_h2">Discover Untouched Beaches</h2>
+                <h3 class="slide_h3">
+                  Relax on pristine white sands and explore crystal-clear waters
+                  that will take your breath away.
+                </h3>
+              </div>
+              <div class="slide slide3">
+                <h2 class="slide_h2">Experience Cultural Heritage</h2>
+                <h3 class="slide_h3">
+                  Immerse yourself in Indonesia's rich traditions, art, and
+                  history like never before.
+                </h3>
+              </div>
+              <div class="slide slide4">
+                <h2 class="slide_h2">Adventure Awaits You</h2>
+                <h3 class="slide_h3">
+                  Conquer stunning volcanic landscapes and trek through lush
+                  tropical jungles.
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="media-section">
+            <div class="data_events">
+              <p class="data_events_p">Fb</p>
+              <p class="data_events_p">In</p>
+              <p class="data_events_p">Tw</p>
+            </div>
+            <div class="media-section_info-card">
+              <div class="info-card">
+                <p class="info-card-number">01</p>
+                <h4 class="info-card-h4">Title here</h4>
+                <p class="info-card-p">
+                  Lorem ipsum dolor sit amet et amet ist ame.
+                </p>
+              </div>
+              <div class="info-card">
+                <p class="info-card-number">02</p>
+                <h4 class="info-card-h4">Title here</h4>
+                <p class="info-card-p">
+                  Lorem ipsum dolor sit amet et amet ist ame.
+                </p>
+              </div>
+              <div class="info-card">
+                <p class="info-card-number">03</p>
+                <h4 class="info-card-h4">Title here</h4>
+                <p class="info-card-p">
+                  Lorem ipsum dolor sit amet et amet ist ame.
+                </p>
+              </div>
+            </div>
+            <div class="media-section_video-wrapper">
+              <img
+                class="video-thumbnail"
+                src="project-root/assets/img/background-video.jpg"
+                alt="Beach Thumbnail"
+              />
+              <button class="play-button">
+                <img src="project-root/assets/img/play.png" alt="Play" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="highlights-section" id="section1">
+      <div class="highlights-section__container">
+        <div class="highlights-section__item highlights-section__item--top">
+          <div class="highlight-section">
+            <img
+              class="highlight-image"
+              src="project-root/assets/img/andri-hermawan-O_9D_GD9Zs8-unsplash.jpg"
+              alt="Walkways"
+            />
+            <div class="highlight-content">
+              <h3 class="highlight-title">
+                The walkways of Indonesia spellbind
+              </h3>
+              <p class="highlight-description">
+                Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce
+                commodo magna et libero mollis rhoncus.
+              </p>
+              <button class="btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlights-section__item highlights-section__item--bottom">
+          <div class="highlight-section highlight-section--reverse">
+            <img
+              class="highlight-image"
+              src="project-root/assets/img/destination_highlights_block-2.jpg"
+              alt="Beaches"
+            />
+            <div class="highlight-content">
+              <h3 class="highlight-title">
+                Perfect beaches exude relaxation and fun
+              </h3>
+              <p class="highlight-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                commodo magna et libero mollis rhoncus.
+              </p>
+              <button class="btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="explore_our_secrets" id="section2">
+      <div class="explore_our_secrets_content">
+        <div class="swiper-container">
+          <h3 class="eos_slider-title">Explore Our Secrets</h3>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="project-root/assets/img/harry-kessell-eE2trMn-6a0-unsplash.jpg"
+                  alt="Slide 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="project-root/assets/img/robert-collins-tvc5imO5pXk-unsplash.jpg"
+                  alt="Slide 2"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="project-root/assets/img/jason-cooper-XEhchWQuWyM-unsplash.jpg"
+                  alt="Slide 3"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="project-root/assets/img/gladys-arivia-XIhXVSraYTs-unsplash.jpg"
+                  alt="Slide 4"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="project-root/assets/img/michaela-rimakova-OaQqckoKNVE-unsplash.jpg"
+                  alt="Slide 5"
+                />
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
+        <div class="numbers">
+          <div class="numbers_content">
+            <div class="numbers_items_main">
+              <h3 class="numbers_content_h3">By The Numbers</h3>
+              <p class="numbers_content_p_main">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                commodo magna et libero.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit.
+              </p>
+            </div>
+            <div class="numbers_items_container">
+              <div class="numbers_items">
+                <h3 class="numbers_content_h4">100+</h3>
+                <p class="numbers_content_p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  commodo magna et libero.
+                </p>
+              </div>
+              <div class="numbers_items">
+                <h3 class="numbers_content_h4">43,000+</h3>
+                <p class="numbers_content_p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  commodo.
+                </p>
+              </div>
+              <div class="numbers_items">
+                <h3 class="numbers_content_h4">30+</h3>
+                <p class="numbers_content_p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  commodo magna et libero.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cta-section">
+      <div class="cta-content">
+        <h3 class="cta-title">
+          Our hills and valleys are like nothing you've seen.
+        </h3>
+        <p class="cta-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit
+          amet magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris
+          tortor.
+        </p>
+        <button class="btn-primary">Learn More</button>
+      </div>
+    </div>
+    <section class="about-experience-section" id="about">
+      <div class="about-experience-section__content">
+        <h3 class="about-experience-section__title">
+          Live a life like you wouldn't imagine, experience a life you wouldn't
+          expect.
+        </h3>
+
+        <div class="about-experience-section__video">
+          <img
+            src="project-root/assets/img/fikri-rasyid-IBb_Y65z5ZU-unsplash.jpg"
+            alt="Video preview"
+          />
+          <button class="btn-play">
+            <img src="project-root/assets/img/play.png" alt="Play" />
+          </button>
+        </div>
+
+        <div class="experience-cards">
+          <div class="experience-card">
+            <img
+              class="experience-card__img"
+              src="project-root/assets/img/hugo-matilla-EFuCATqfblI-unsplash.jpg"
+              alt="Experience 1"
+            />
+            <div class="experience-card__content">
+              <h4 class="experience-card__title">In The Country</h4>
+              <p class="experience-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dapibus mauris in lectus tempus.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <img
+              class="experience-card__img"
+              src="project-root/assets/img/afif-ramdhasuma-XYQPyn4KkiY-unsplash.jpg"
+              alt="Experience 2"
+            />
+            <div class="experience-card__content">
+              <h4 class="experience-card__title">In The Country</h4>
+              <p class="experience-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dapibus mauris in lectus tempus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="photo-gallery-section" id="section4">
+      <div class="gallery-content">
+        <h3 class="gallery-title">Photo Gallery</h3>
+        <p class="gallery-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          dapibus mauris in lectus tempus, eget tincidunt.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gallery-column gallery-column-1">
+            <div class="gallery-item">
+              <img
+                src="project-root/assets/img/cok-wisnu-ohzMzm9zWuA-unsplash.jpg"
+                alt="Image 1"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="project-root/assets/img/irns-niwvqOEYZQ8-unsplash.jpg"
+                alt="Image 2"
+              />
+            </div>
+          </div>
+          <div class="gallery-column gallery-column-2">
+            <div class="gallery-item">
+              <img
+                src="project-root/assets/img/iswanto-arif-u0lAovoUsaU-unsplash.jpg"
+                alt="Image 3"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="project-root/assets/img/killian-pham-Sq8rpq2KB7U-unsplash.jpg"
+                alt="Image 4"
+              />
+            </div>
+          </div>
+          <div class="gallery-column gallery-column-3">
+            <div class="gallery-item">
+              <img
+                src="project-root/assets/img/sebastian-staines-SBCvP6i8hR8-unsplash.jpg"
+                alt="Image 5"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="project-root/assets/img/atik-sulianami-gJegRRpCm1g-unsplash.jpg"
+                alt="Image 6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="journey-steps-section">
+      <div class="journey-content">
+        <h3 class="journey-title">Getting there</h3>
+
+        <div class="journey-steps">
+          <div class="journey-step">
+            <div class="step-number step-number_after">1</div>
+            <div class="step-details">
+              <h3 class="step-title">Bookings your flights</h3>
+              <p class="step-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
+                varius. Sed euismod orci dictum faucibus malesuada. Praesent sed
+                eros tincidunt, viverra neque auctor, lobortis enim.
+              </p>
+            </div>
+          </div>
+
+          <div class="journey-step">
+            <div class="step-number">2</div>
+            <div class="step-details">
+              <h3 class="step-title">Check in and enjoy your stay</h3>
+              <p class="step-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
+                varius. Sed euismod orci dictum faucibus malesuada. Praesent sed
+                eros tincidunt, viverra neque auctor, lobortis enim.
+              </p>
+              <div class="step-media">
+                <img
+                  src="project-root/assets/img/tbel-abuseridze-3Hp9UgGwhIQ-unsplash.jpg"
+                  alt="Travel image"
+                />
+                <div class="step-media-text">
+                  <h4 class="step-media-title">Travelling there</h4>
+                  <p class="step-media-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus dapibus mauris in lectus tempus, eget tincidunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="journey-step">
+            <div class="step-number">3</div>
+            <div class="step-details">
+              <h3 class="step-title">Planning your experiences</h3>
+              <p class="step-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
+                varius.
+              </p>
+              <button class="btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <img
+              src="project-root/assets/img/logo-footer.png"
+              alt="Explore Indonesia"
+            />
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__social">
+            <a href="#"
+              ><img src="project-root/assets/img/facebook.png" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="project-root/assets/img/linkedin-256.png"
+                alt="LinkedIn"
+            /></a>
+            <a href="#"
+              ><img src="project-root/assets/img/google.png" alt="Google"
+            /></a>
+          </div>
+          <p class="footer__copyright">Copyright &copy; 2024</p>
+        </div>
+      </div>
+
+      <button class="scroll-to-top" id="scrollToTopBtn">
+        <img src="project-root/assets/img/up-arrow.png" alt="Scroll to top" />
+      </button>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

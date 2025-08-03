@@ -1,0 +1,32 @@
+.photo-gallery-section {
+  width: 100%;
+  height: clamp(480px, 100vh, 1340px);
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-content {
+  max-width: 1170px;
+  height: 982px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-title {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.gallery-description {
+  font-size: var(--fs-paragraph);
+  color: var(--color-text-gray);
+  max-width: 540px;
+  padding: 4.1rem 0 7.1rem 0;
+  line-height: var(--l);
+  text-align: center;
+}

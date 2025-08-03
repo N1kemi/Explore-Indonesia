@@ -1,0 +1,3 @@
+This is my fourth and largest project. Unfortunately, it is not yet complete, as I lacked knowledge in the field of responsive design. I believe that the site should have been created with mobile devices in mind, rather than desktop computers, as I did. But what is done is done. I will complete this project very soon.
+
+Stay tuned for updates...
